@@ -1,0 +1,150 @@
+ 
+Objective 
+The objective is to demonstrate pushing changes to a GitHub repository, covering setup, managing 
+visibility, and executing basic Git operations. 
+Tools/ Software Required 
+• Git (Version Control System) 
+• GitHub Account 
+• Code Editor (VS Code / Sublime / Notepad++) 
+• Command Line Interface (Terminal / Git Bash) 
+Industry Relevance and Applications 
+• Software Development: Enables version control for large codebases. 
+• Collaboration: Supports team-based projects using GitHub. 
+• DevOps: Integral for CI/CD pipelines and automation workflows. 
+• Open Source Contribution: Used for managing public repositories and contributions. 
+Description 
+The aim of the experiment is to demonstrate the process of pushing changes to a GitHub repository. 
+This involves: 
+1. Setting up Git: Ensure Git is installed on your computer. 
+2. Managing Repository Visibility: Understand the effects of making a repository private or 
+public on GitHub. 
+3. Changing Repository Visibility: Learn how to change the visibility of a repository on GitHub. 
+4. Pushing Changes to the Repository: Make changes to a local repository, commit them, and 
+push them to the remote repository on GitHub. 
+Introduction of GIT 
+Git is one of the ways of implementing the idea of version control. It is Distributed Version Control 
+System. 
+Managing Private and Public Repository 
+Making a repository Private 
+• GitHub will detach public forks of the public repository and put them into a new network. Public 
+forks are not made private. 
+• If you’re using GitHub Free for personal accounts or organizations, some features won’t be 
+available in the repository after you change the visibility to private. Any published GitHub Pages 
+site will be automatically unpublished. If you added a custom domain to the GitHub Pages site, 
+you should remove or update your DNS records before making the repository private, to avoid the 
+risk of a domain takeover. 
+ 
+ 
+24CS2019 – DevOps Laboratory URK22CS1138 
+ 
+• GitHub will no longer include the repository in the GitHub Archive Program. 
+• GitHub Advanced Security features, such as code scanning, will stop working. 
+Making a repository Public 
+• GitHub will detach private forks and turn them into a standalone private repository. 
+• If you’re converting your private repository to a public repository as part of a move toward creating 
+an open source project. 
+• Once your repository is public, you can also view your repository’s community profile to see 
+whether your project meets best practices for supporting contributors. 
+• The repository will automatically gain access to GitHub Advanced Security features. 
+Changing a repository’s Visibility 
+1. On GitHub.com, navigate to the main page of the repository. 
+2. Under your repository name, click Settings. If you cannot see the ‘Settings’ tab, select the 
+dropdown menu, then click Settings. 
+3. In the ‘Danger Zone’ section, click Change visibility.  
+4. Select a visibility. 
+5. To verify that you’re changing the correct repository’s visibility, type the name of the repository 
+you want to change the visibility of. 
+6. Click I understand, change repository visibility. 
+Command list with explanation: 
+git init : Initializes a new Git repository in the current directory. 
+git add . : Stages all changes (files) for the next commit. 
+git commit -m "message" : Commits the staged changes with a message. 
+git remote add origin <repo-link> : Links the local repository to a remote GitHub repository. 
+git remote –v : Displays the remote connections. 
+git push -u origin main : Pushes committed changes to the main branch of the remote repo. 
+git pull origin main : Fetches and merges changes from the remote repository into local. 
+Procedure 
+1. Pushing Changes to the Repository: 
+1. Create a new repository in github 
+2. Open terminal in your project folder. 
+3. Initialize Git: use the command ‘git init’ to make the folder a Git repository. 
+4. Add files: git add . to stage all changes. 
+5. Commit changes: git commit -m "your message" to save the changes locally. 
+6. Connect remote repo: git remote add origin <repo-link> to link GitHub repository. 
+7. Check remote: git remote -v to confirm the remote link. 
+8. Push changes: git push -u origin main to upload to the main branch. 
+ 
+2. Perform Pull Request and Merge: 
+1. Create a New Branch From your local repository using: git checkout -b feature-branch 
+2. Make Changes in the Branch 
+• Edit or add files in your project folder. 
+ 
+24CS2019 – DevOps Laboratory URK22CS1138 
+ 
+• Stage and commit the changes, using: git add . and git commit -m "Added new feature"  
+3. Push the new branch to the remote repository using: git push origin feature-branch 
+4. Create a Pull Request on GitHub 
+• Go to your repository on GitHub. 
+• You’ll see a prompt: Compare & pull request → Click it. 
+• Check the base branch (main) and compare branch (feature-branch). 
+• Add a title and description. 
+• Click Create pull request. 
+5. Merge the Pull Request 
+• After reviewing, click Merge pull request. 
+• Confirm by clicking Confirm merge. 
+• Delete the feature branch. 
+3. Managing Repository Visibility: 
+1. Log in to GitHub and navigate to the repository you want to modify. 
+2. Click on the Settings tab. 
+ 
+3. Scroll down to the Danger Zone section. 
+ 
+4. Click Change Visibility. 
+5. Select the desired option: 
+• Make private → Restricts visibility to you and collaborators. 
+• Make public → Allows anyone to view your repository. 
+6. Confirm the action: 
+• Type the repository name in the confirmation box. 
+• Click I understand, change repository visibility. 
+ 
+24CS2019 – DevOps Laboratory URK22CS1138 
+ 
+7. GitHub will update the repository visibility immediately. 
+ 
+Sample Inputs: 
+Pushing Changes to the Repository: 
+ 
+ 
+Pull request and Merge: 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+24CS2019 – DevOps Laboratory URK22CS1138 
+ 
+ 
+OUTPUT 
+Git Repository: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Result: 
+Thus, successfully pushed changes to a GitHub repository, managed visibility, created a pull request, 
+and merged changes into the main branch. 
