@@ -1,0 +1,15 @@
+# 1️⃣ You already have the folder, so skip mkdir
+cd "C:\Users\mohan\OneDrive\Desktop\3dev\4dev\5.dev"
+
+# 2️⃣ Create subfolders (PowerShell syntax)
+New-Item -ItemType Directory -Force -Path "tests"
+New-Item -ItemType Directory -Force -Path ".github\workflows"
+
+# 3️⃣ Create empty files (PowerShell equivalent of 'touch')
+New-Item -ItemType File -Force -Path "app.py"
+New-Item -ItemType File -Force -Path "requirements.txt"
+New-Item -ItemType File -Force -Path "Dockerfile"
+New-Item -ItemType File -Force -Path ".gitignore"
+New-Item -ItemType File -Force -Path "tests\test_app.py"
+New-Item -ItemType File -Force -Path ".github\workflows\ci-dockerhub.yml"
+
